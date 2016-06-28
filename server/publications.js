@@ -1,6 +1,7 @@
 /* global Meteor */
 /* global Mongo */
 
+// NOTE: Do not switch function to es6 () => {}.
 Meteor.publish(null, function() {
   if (this.userId) {
     const self = this;
