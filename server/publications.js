@@ -1,7 +1,7 @@
 Meteor.publish(null, function() {
   if(this.userId) {
-    var self = this;
-    var query = Meteor.users.find(
+    const self = this;
+    const query = Meteor.users.find(
       {_id: this.userId},
       {fields: {
                   emails: 1,
