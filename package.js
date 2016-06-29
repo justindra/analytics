@@ -11,6 +11,7 @@ Package.onUse(function(api) {
   api.use('mongo');
   api.use('accounts-base', ['client', 'server'], {weak: true});
   api.use('browser-policy-content', 'server', {weak: true});
+  api.use('ecmascript');
 
   //weak dependencies indicate we will load after the following packages
   // and constrain their versions IF another package, or app brings them in
